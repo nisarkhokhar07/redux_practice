@@ -6,7 +6,7 @@ const INITIAL_STATE = {
 
 const cakeSlice = createSlice({
     name: 'cake',
-    INITIAL_STATE,
+    initialState: INITIAL_STATE,
     reducers: {
         ordered: ( state , action ) => {
             state.numOfCakes -= action.payload
