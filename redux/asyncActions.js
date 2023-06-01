@@ -40,7 +40,7 @@ const fetchUsers = () => {
   return async function (dispatch) {
     dispatch(fetchUsersRequest());
     try {
-      const response = await axios.get(
+      const response = await axios(
         "https://jsonplaceholder.typicode.com/users"
       );
       const dataa = await response.data;
